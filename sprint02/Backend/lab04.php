@@ -16,33 +16,43 @@
 <body>
 
 
+</div>
 
-    <div class="main">
-        <?php
+<div class="main">
+    <?php
+    /**
+     * Created by PhpStorm.
+     * User: Twan
+     * Date: 22-2-2018
+     * Time: 13:45
+     */
 
-        $breedte = 10;
+    $boeken = array (
+        array("titel"=> "Stoner",
+            "auteur"=> "John WIlliams",
+            "genre"=> "fictie",
+            "prijs"=> 19.99),
+        array("titel"=> "De cirkel",
+            "auteur"=> "Dave Eggers",
+            "genre"=> "fictie",
+            "prijs"=> 22.50),
+        array("titel"=> "Rayuela",
+            "auteur"=> "Julio Cortazar",
+            "genre"=> "fictie",
+            "prijs"=> 25.50),
+    );
 
-        $lengte = 11;
+    function prijsLijst($boeken){
 
-        $hoogte = 5;
+        echo "prijs: <i>" .$boeken[0]["prijs"]."</i><br>";
+        echo "prijs: <i>" .$boeken[1]["prijs"]."</i><br>";
+        echo "prijs: <i>" .$boeken[2]["prijs"]."</i><br>";
 
-        $oppervlakte = $lengte * $breedte;
+    }
 
-        $volume = $lengte * $breedte * $hoogte;
-
-
-
-        echo "De containervolume is $volume m² <br>";
-
-        echo "De containeroppervlakte is " . $oppervlakte . " m²";
-
-
-
-        ?>
-    </div>
-
-
-
+    prijsLijst($boeken);
+    ?>
+</div>
 <?php include '../sidebar.php'; ?>
 </body>
 
