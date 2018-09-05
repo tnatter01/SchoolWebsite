@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="sprint2.css">
+    <meta charset="UTF-8">
+    <title>Inline</title>
+
+</head>
+<body onload="alertfunction()">
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+
+
+    <li><a href="inline.html">Inline</a></li>
+    <li><a href="Extern.html">Extern</a></li>
+    <li><a href="voorwaardelijkeOperator.html">Voorwaardelijke Operator</a></li>
+    <li><a href="randomNumber.html">Random Number</a></li>
+    <li><a href="typeof.html">Type of</a></li>
+    <li><a href="rekenenn.html">Rekenen</a></li>
+    <li><a href="Lab02.html">Lab 02</a></li>
+
+
+
+
+
+
+</ul>
+
+<button onclick="myFunction()">Voer uw code in</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var code = prompt("Please enter your code", "Uw Code");
+        if (code != null) {
+            document.getElementById("demo").innerHTML =
+                "Uw ingevulde code is "  +code+" ";
+        }
+    }
+</script>
+
+</body>
+</html>

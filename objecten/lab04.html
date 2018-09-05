@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 04</title>
+</head>
+<body>
+<script>
+    function ignoreCase(a,b) {
+        return (''+a).toUpperCase() < (''+b).toUpperCase() ? -1 : 1;
+    }
+    document.write("Lab 04")
+    var palet = new Array;
+    palet = ["rood", "oranje", "geel", "groen", "blauw"];
+    document.write("<br>3 palet is nu: " + palet);
+
+    var nieuwekleur = prompt('Typ een nieuwe kleur in: ');
+    palet.push(nieuwekleur);
+    document.write("<br>6 palet is nu: " + palet);
+
+    var nieuwekleur = prompt('Typ een nieuwe kleur in: ');
+    palet.unshift(nieuwekleur);
+    document.write("<br>9 palet is nu: " + palet);
+
+    palet.sort(ignoreCase);
+    document.write("<br>11 palet is nu: " + palet);
+
+    var palet2 = palet.splice(3)
+    document.write("<br>13 palet is nu: " + palet);
+    document.write("<br>14 palet2 is nu: " + palet2);
+
+    var palet3 = palet.slice();
+    document.write("<br>16 palet3 is nu: " + palet3);
+</script>
+</body>
+</html>

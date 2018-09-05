@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--dit script: werkt met de for-lus -->
+</head>
+<body>
+    <script>
+        document.write("<h3>Opdracht 69</h3>");
+        for (x = 0; x < 3; x++){
+            document.write('<br>Dit is lus: ' + x + '');
+        }
+
+        document.write("<br><h3>Opdracht 70</h3>");
+
+        var student = new Array(
+            'Zakaria','Albert','Hamsa','Mika','Pieter','Harry');
+        for(x=0; x<student.length; x++){
+            document.write('<br>Element '+ x + ' is ' + student[x]);
+        }
+
+        document.write("<br><h3>Opdracht 71</h3>");
+
+        for(x=0; x<student.length; x++) {
+            if (x % 2 == 0) {
+                document.write('<br>Element ' + x + ' is ' + student[x]);
+            }
+        }
+
+        document.write("<br><h3>Opdracht 72</h3>");
+
+        var tekst = 'Hij lijkt een beetje op Nelson Mandela.';
+        lengte = tekst.length;
+        spaties = 0;
+        document.write('<br>');
+        for(x=0; x<lengte; x++){
+            teken = tekst.charAt(x)
+            document.write(teken);
+            if(teken == ' '){
+                spaties++;
+            }
+        }
+        document.write('<br>Tekst bevat ' + spaties + ' spaties.');
+
+        document.write("<br><h3>Opdracht 73</h3>");
+
+        var tekst = 'Hij lijkt een beetje op Nelson Mandela.';
+        lengte = tekst.length;
+        as = 0;
+        es = 0;
+        is = 0;
+        os = 0;
+        us = 0
+        document.write('<br>');
+        for(x=0; x<lengte; x++){
+            teken = tekst.charAt(x)
+            document.write(teken);
+            if(teken == 'a'){
+                as++;
+            }
+            if(teken == 'e'){
+                es++;
+            }
+            if(teken == 'i'){
+                is++;
+            }
+            if(teken == 'o'){
+                os++;
+            }
+            if(teken == 'u'){
+                us++;
+            }
+
+        }
+        document.write("<br>Aantal a's: " + as);
+        document.write("<br>Aantal e's: " + es);
+        document.write("<br>Aantal i's: " + is);
+        document.write("<br>Aantal o's: " + os);
+        document.write("<br>Aantal u's: " + us);
+
+        document.write("<br><h3>Lab 11</h3>");
+        var getal= new Array();
+        getal[0] = 'nul';
+        getal[1] = 'een';
+        getal[2] = 'twee';
+        getal[3] = 'drie';
+        getal[4] = 'vier';
+        getal[5] = 'vijf';
+        getal[6] = 'zes';
+        getal[7] = 'zeven';
+        getal[8] = 'acht';
+        getal[9] = 'negen';
+
+        telefoonnummer = prompt('Wat is je telefoonnummer?');
+        lengte = telefoonnummer.length;
+
+        for(x=0; x<lengte; x++){
+
+        }
+
+        document.write('<br>' + telefoonnummer);
+        document.write('<br>Je telefoonnummer is:')
+
+
+    </script>
+
+
+</body>
+</html>

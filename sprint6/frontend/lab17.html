@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 17 Lingospel</title>
+</head>
+<body>
+<form name="lingo" onsubmit="lingo()">
+        <h3>stadsnaam?</h3>
+        <p id="randomwoord"></p>
+        <input type="text" value="" id="woord">
+        <button type="submit">Check</button>
+        <p id="gokaantal">gok 1?</p>
+</form>
+    <script>
+
+        steden = new Array(8);
+        steden[0] = "Amsterdam";
+        steden[1] = "Barcelona";
+        steden[2] = "Londen";
+        steden[3] = "Parijs";
+        steden[4] = "Berlijn";
+        steden[5] = "Antwerpen";
+        steden[6] = "Rome";
+        steden[7] = "Madrid";
+
+        gegokt = new Array;
+        var gokaantal = 0;
+        var input = document.getElementById("woord").value;
+        var randomStad = steden[Math.floor(Math.random() * steden.length)];
+
+        var i;
+        var vraagtekens = '';
+
+            for (i = 0; i < randomStad.length; i++) {
+                vraagtekens += String('?');
+            }
+        document.getElementById("randomwoord").innerHTML = vraagtekens;
+
+        function lingo(){
+            gegokt.push(input);
+
+            for(var j=0; j<gegokt.length; j++){
+                for(var i=0; i<input.length; i++){
+                    var c = gegokt[j].charAt(i);
+                    if(c == " "){
+                        alert("Woord mag geen spaties hebben!");
+                        return true;
+                    }
+                }
+            }
+
+        }
+
+    </script>
+</body>
+</html>

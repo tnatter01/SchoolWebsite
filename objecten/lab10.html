@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 10</title>
+    <script src="mijn-functions.js"></script>
+</head>
+<body>
+
+<form name='form'>
+    <input type="text" name="bedrag" placeholder="bedrag">
+    <select name="converteren">
+        <option value="dollar_euro">dollar/euro</option>
+        <option value="euro_dollar">euro/dollar</option>
+        <option value="ruble_euro" selected>ruble/euro</option>
+        <option value="euro_ruble">euro/ruble</option>
+    </select>
+    <input type="button" value="converteren"
+           onclick="document.write(exchange(document.form.bedrag.value, document.form.converteren.value))">
+</form>
+</body>
+</html>

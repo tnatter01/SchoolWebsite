@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>mijn functies</title>
+    <!--dit script: werkt met functies
+    auteur: Twan Natter -->
+    <script src="mijnfunctions.js"></script>
+    <script>
+        function verdubbel(inputgetal ) {
+            outputgetal = inputgetal * 2;
+            return(outputgetal);
+        }
+    </script>
+</head>
+<body>
+<div class="sidenav">
+
+    <button class="dropdown-btn">S2-DB-01 Select
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="/sprint3/database/groep8.html">groep8.sql</a>
+        <a href="/sprint3/database/grolsch.html">grolsch.sql</a>
+        <a href="#">Customer.sql</a>
+        <a href="#">Bestelling.sql</a>
+        <a href="#">Lab01.sql</a>
+        <a href="#">Lab02.sql</a>
+        <a href="#">Lab03.sql</a>
+        <a href="#">Lab04.sql</a>
+        <a href="#">Lab05.sql</a>
+    </div>
+
+    <button class="dropdown-btn">S2-DB-02 Interne Methodes
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Opdracht 1</a>
+        <a href="#">Opdracht 2</a>
+        <a href="#">Lab06.sql</a>
+    </div>
+
+    <a href="/sprint3/rekenen/rekenen.html">S2-REK-D2 procentuele afname en toename</a>
+
+    <a href="#">S2-BE-07 Constanten en globale variabelen</a>
+
+    <button class="dropdown-btn">S2-BE-08 Werken met datums
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="/sprint3/backend/lab15.php">Lab 15</a>
+        <a href="/sprint3/backend/myage.php">myage.php</a>
+        <a href="/sprint3/backend/datediff.php">datediff.php</a>
+    </div>
+
+    <button class="dropdown-btn">S2-BE-09 Cookies
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="/sprint3/backend/lab16.php">Lab 16</a>
+        <a href="/sprint3/backend/opdracht1.php">Opdracht 1</a>
+    </div>
+
+    <a href="/sprint3/backend/lab17.php">S2-BE-09 JSON en literals</a>
+
+    <button class="dropdown-btn">S2-FE-M07 Objecten
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="/sprint3/frontend/lab04.html">Lab 04</a>
+        <a href="/sprint3/frontend/lab05.html">Lab 05</a>
+        <a href="/sprint3/frontend/lab06.html">Lab 06</a>
+    </div>
+
+    <button class="dropdown-btn">S2-FE-M08 Structuren
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="/sprint3/frontend/lab07.html">Lab 07</a>
+        <a href="/sprint3/frontend/lab08.html">Lab 08</a>
+        <a href="/sprint3/frontend/lab09.html">Lab 09</a>
+    </div>
+
+    <button class="dropdown-btn">S2-FE-M09 Functies
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="/sprint3/frontend/lab10.html">Lab 10</a>
+        <a href="/sprint3/frontend/mijn-functions.js">mijn-functions.js</a>
+        <a href="/sprint3/frontend/mijnfunctions.js">mijnfucntions.js</a>
+        <a href="/sprint3/frontend/mijnfunctions.html">mijnfunctions.html</a>
+    </div>
+
+
+</div>
+
+    <script>
+        mijngetal = prompt('Typ een getal in');
+        resultaat = verdubbel(mijngetal);
+        document.write('<br>Input-getal: ' + mijngetal);
+        document.write('<br>Output-getal: ' + resultaat);
+        afmelden();
+        begroeten();
+        document.write('<br>De dollarkoers is ' + dollarKoers());
+        document.write('<br>De eurokoers is ' + euroKoers());
+        document.write(
+            '<br>100 dollar is ' + dollar_naar_euro(100) + ' euro\'s');
+        document.write('<br>wissel 100 euro\'s in dollars: ' +
+        wissel(100,'euro'));
+        document.write('<br>wissel 20 dollars in euro\'s: ' +
+        wissel(20,'dollar'));
+    </script>
+<form name='form'>
+    <input type="text" name="bedrag" placeholder="bedrag">
+    <input type="button" value="converteren"
+           onclick="document.write('conversie in euro\'s'
+             +  dollar_naar_euro(document.form.bedrag.value))">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="sprint2.css">
+    <meta charset="UTF-8">
+    <title>Lab 01</title>
+
+</head>
+<body>
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+
+
+    <li><a href="alert.html">Alert</a></li>
+    <li><a href="write.html">Write</a></li>
+    <li><a href="prompt.html">Prompt</a></li>
+    <li><a href="lab01.html">Lab 01</a></li>
+
+
+
+
+
+
+
+</ul>
+<script>
+    var klantnaam = prompt("Voer uw eigen naam in");
+    var aantal = parseInt(prompt("Hoeveel boeken wilt u bestellen?"));
+    var titel = "JavaScript";
+    var prijs = 29.90;
+    var bedrag = aantal * prijs;
+    var btw = bedrag * .06;
+    var totaal = btw + bedrag;
+    document.write(
+        "Bedankt voor uw bestelling:  " + klantnaam);
+    document.write(
+        "<br> Boektitel is:  " + titel);
+    document.write(
+        "<br> Aantal te bestellen: " + aantal);
+    document.write(
+        "<br> Prijs per boek is: " + prijs.toFixed(2));
+    document.write(
+        "<br> Bedrag is: " + bedrag.toFixed(2));
+    document.write(
+        "<br> BTW is:" + btw.toFixed(2));
+    document.write(
+        "<br> Totaal inclusief BTW is: " + totaal.toFixed(2));
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 16</title>
+</head>
+<body>
+
+<div id="kalender">
+    <p>Selecteer maand:</p>
+
+    <select id="selectMaand">
+        <option value="0">Januari</option>
+        <option value="1">Februari</option>
+        <option value="2">Maart</option>
+        <option value="3">April</option>
+        <option value="4">Mei</option>
+        <option value="5">Juni</option>
+        <option value="6">Juli</option>
+        <option value="7">Augustus</option>
+        <option value="8">September</option>
+        <option value="9">Oktober</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+    </select>
+
+    <p>Selecteer jaar:</p>
+
+    <select id="selectJaar"></select>
+
+    <input id="button" type="submit" name="button" onclick="printCalendar();" value="Print Calendar"/>
+
+
+    <h3 id="head"></h3>
+
+
+</div>
+<script>
+    var maanden = new Array(11);
+    maanden[0] = 'Januari'
+    maanden[1] = 'Februari';
+    maanden[2] = 'Maart';
+    maanden[3] = 'April';
+    maanden[4] = 'Mei';
+    maanden[5] = 'Juni';
+    maanden[6] = 'Juli';
+    maanden[7] = 'Augustus';
+    maanden[8] = 'September';
+    maanden[9] = 'Oktober';
+    maanden[10] = 'November';
+    maanden[11] = 'December';
+
+    var dagenmaand = new Array(11);
+    dagenmaand[0] = '31';
+    dagenmaand[1] = '28';
+    dagenmaand[2] = '31';
+    dagenmaand[3] = '30';
+    dagenmaand[4] = '31';
+    dagenmaand[5] = '30';
+    dagenmaand[6] = '31';
+    dagenmaand[7] = '30';
+    dagenmaand[8] = '30';
+    dagenmaand[9] = '31';
+    dagenmaand[10] = '30';
+    dagenmaand[11] = '31';
+
+    var eind = new Date().getFullYear();
+    var options = "";
+    for(jaar = 1900 ; jaar <=eind; jaar++){
+        options += "<option>"+ jaar +"</option>";
+    }
+    document.getElementById("selectJaar").innerHTML = options;
+
+    function printCalendar(){
+
+        var maand = document.getElementById("selectMaand");
+        document.getElementById("head").innerHTML = maanden[maand.value];
+        var jaar = document.getElementById("selectJaar");
+        document.getElementById("head").innerHTML = (maanden[maand.value] + " " + jaar.value);
+    }
+</script>
+</body>
+</html>

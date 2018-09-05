@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="sprint2.css">
+    <meta charset="UTF-8">
+    <title>Lezen</title>
+
+</head>
+<body onload="alertfunction()">
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+
+
+    <li><a href="weekdagen.html">Weekdagen</a></li>
+    <li><a href="spreekwoord.html">Spreekwoord</a></li>
+    <li><a href="lezen.html">Lezen</a></li>
+    <li><a href="getallen.html">Getallen</a></li>
+    <li><a href="yahtzee.html">Yahtzee</a></li>
+    <li><a href="Lab03.html">Lab03</a></li>
+
+
+
+
+
+
+
+</ul>
+
+<script type="text/javascript">
+    var lezen = new Array();
+    lezen[0]="aap";
+    lezen[1]="noot";
+    lezen[2]="mies";
+    lezen.push("Wim");
+    lezen.push("zus");
+    lezen.push("Jet");
+    for(var i=0; i<lezen.length; ++i){
+        document.write(lezen[i] + ", ");
+    }
+</script>
+
+</body>
+</html>
+

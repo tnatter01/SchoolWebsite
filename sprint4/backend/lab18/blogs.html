@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blogs.html</title>
+</head>
+<body>
+<h2>Welkom op de blog post pagina!</h2>
+<form method="post" action="blogs.php">
+    Naam:<br>
+    <input type="text" name="naam" required><br>
+    Bericht:<br>
+    <textarea rows="4" cols="21" name="bericht" required></textarea><br>
+    <input type="hidden" id="date" name="datum" /><br>
+    <input type="submit" name="submit" value="Verstuur" onclick="document.getElementById('date').value = new Date().toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'})">
+</form>
+<br><input type="button" name="loguit" onClick="window.location.href='uitloggen.php';" value="Uitloggen"/><br>
+<br><input type="button" name="skip" onClick="window.location.href='blogs.php';" value="Naar de blog"/>
+</body>
+</html>

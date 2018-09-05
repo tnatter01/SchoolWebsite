@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+
+}
+h1 {
+    text-align: center;
+    color: #74e4ff;
+}
+p {
+    text-align:center;
+    color: black;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+li {
+
+    float:left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: aqua;
+}
+
+li a:hover {
+    background: red;
+    transition: all 0.45s;
+
+}

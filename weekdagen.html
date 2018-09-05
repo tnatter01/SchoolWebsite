@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="sprint2.css">
+    <meta charset="UTF-8">
+    <title>Weekdagen</title>
+
+</head>
+<body onload="alertfunction()">
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+
+
+    <li><a href="weekdagen.html">Weekdagen</a></li>
+    <li><a href="spreekwoord.html">Spreekwoord</a></li>
+    <li><a href="lezen.html">Lezen</a></li>
+    <li><a href="getallen.html">Getallen</a></li>
+    <li><a href="yahtzee.html">Yahtzee</a></li>
+    <li><a href="Lab03.html">Lab03</a></li>
+
+
+
+
+
+
+
+</ul>
+
+<script type="text/javascript">
+    var dag = new Array();
+    dag[0] = "zondag";
+    dag[1] = "maandag";
+    dag[2] = "dinsdag";
+    dag[3] = "woensdag";
+    dag[4] = "donderdag";
+    dag[5] = "vrijdag";
+    dag[6] = "zaterdag";
+    var date = new Date();
+    var dagNummer = date.getDay();
+    document.write("Het is vandaag " + dag[dagNummer] + ".");
+
+
+</script>
+
+</body>
+</html>

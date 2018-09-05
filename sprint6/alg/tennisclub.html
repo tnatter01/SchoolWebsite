@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tennisclubn</title>
+</head>
+<body>
+
+<script>
+    leeftijdOudste = parseInt(prompt('Geef de leeftijd van het oudste familielid?'));
+    aantalKinderen = parseInt(prompt('Geef het aantal kinderen van het gezin in?'));
+    jarenLid = parseInt(prompt('Hoeveel jaar is de familie al lid van deze club?'));
+    lidgeld = 100;
+
+
+    if(leeftijdOudste > 60){
+        lidgeld = lidgeld - 25;
+    }
+
+    if (aantalKinderen == 1){
+        lidgeld = lidgeld - 12.5;
+    }
+    if (aantalKinderen == 2) {
+        lidgeld = lidgeld - 25;
+    }
+    if (aantalKinderen == 3) {
+        lidgeld = lidgeld - 37.5;
+    }
+    if (aantalKinderen == 4) {
+        lidgeld = lidgeld - 50;
+    }
+    if (aantalKinderen >= 5) {
+        lidgeld = lidgeld - 50;
+    }
+
+    if(jarenLid > 20){
+        lidgeld = lidgeld - 25;
+    }
+
+    if (lidgeld <= 39.5){
+        lidgeld = 39.50;
+    }
+
+    document.write('Het lidgeld dat je moet betalen is €' + lidgeld);
+</script>
+
+</body>
+</html>

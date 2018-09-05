@@ -1,0 +1,1 @@
+SELECT * FROM persoon WHERE Geboortedatum <= '2000/03/21'

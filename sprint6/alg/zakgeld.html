@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zakgeld</title>
+</head>
+<body>
+<script>
+    gespaardBedrag = parseInt(prompt('Geef het tot nu toe gespaarde bedrag in.'));
+    intrestvoet = parseInt(prompt('Geef de intrestvoet in.'));
+    aantalJaren = 0;
+    verdubbeld = gespaardBedrag * 2;
+
+    while (gespaardBedrag > verdubbeld){
+        gespaardBedrag = gespaardBedrag * intrestvoet;
+        aantalJaren = aantalJaren++;
+
+    }
+    alert('Het duurt ' + aantalJaren + ' jaren tot je gspaarde bedrag is verdubbeld.')
+</script>
+</body>
+</html>

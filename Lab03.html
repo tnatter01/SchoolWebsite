@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="sprint2.css">
+    <meta charset="UTF-8">
+    <title>Lab 03</title>
+
+</head>
+<body onload="alertfunction()">
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+
+
+    <li><a href="weekdagen.html">Weekdagen</a></li>
+    <li><a href="spreekwoord.html">Spreekwoord</a></li>
+    <li><a href="lezen.html">Lezen</a></li>
+    <li><a href="getallen.html">Getallen</a></li>
+    <li><a href="yahtzee.html">Yahtzee</a></li>
+    <li><a href="Lab03.html">Lab 03</a></li>
+
+
+
+
+
+
+
+</ul>
+
+
+
+<script>
+    var testarray = new Array();
+    testarray[0] = "een";
+    testarray[1] = "twee";
+    testarray[2] = 3;
+    testarray[3] = "vier";
+    testarray[4] = 5;
+    document.write("<h1><b>Lab 03</b></h1> <br>");
+    document.write("<b>03</b> ⁃ " + testarray + "<br>");
+    document.write("<b>04</b> ⁃ Datatype is: " + typeof testarray[4] + "<br>");
+    testarray.splice(testarray.indexOf('4'));
+    document.write("<b>06</b> ⁃ " + testarray + "<br>");
+    testarray.unshift('nul');
+    document.write("<b>08</b> ⁃ " + testarray + "<br>");
+    delete testarray[0];
+    document.write("<b>10</b> ⁃ Datatype [0] is: " + typeof testarray[0] + "<br>");
+    testarray.splice(0,0);
+    document.write("<b>12</b> ⁃ " + testarray + "<br>");
+    testarray.splice(2,1);
+    document.write("<b>14</b> ⁃ " + testarray + "<br>");
+    var index = testarray.indexOf('2');
+    if (index != -1){
+    } else {
+        testarray.splice(3,1);
+    }
+    document.write("<b>16</b> ⁃ " + testarray + "<br>");
+</script>
+
+</body>
+</html>
+

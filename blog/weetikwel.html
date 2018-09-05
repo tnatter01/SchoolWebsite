@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="nl-be">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>iSee</title>
+    <meta content="iSee" name="author">
+    <script language="javascript">
+        function Onweer() {
+            var Tijd, Afstand
+            Tijd = parseInt(prompt("Tel het aantal seconden tussen bliksem en donder?", ""))
+            Afstand = Tijd * 343 / 1000
+
+            if (Afstand > 5) {
+                alert("Ik loop snel weg.")
+            }
+            else {
+                alert("LIGGEN!!")
+            }
+        }
+    </script>
+</head>
+<body>
+<h1 style="text-align: center;"><span style="font-family: Verdana;">Ben je
+        nog veilig in een onweer?<br>
+      </span></h1>
+<h3 style="text-align: center;"><span style="font-family: Verdana;">Als het
+        onweer nog meer dan 5 km ver is,<br>
+        Loop je naar een veilige plaats.<br>
+        Anders ga je best op de grond liggen.<span style="font-family: serif;"></span><br>
+      </span></h3>
+<div style="text-align: center;"><span style="font-family: Verdana;">
+    <button type="button" name="knopnaam" language="javascript" onclick="Onweer()">druk
+          hier</button></span><br>
+    <br style="font-family: Verdana;">
+</div>
+<p><br>
+</p>
+</body>
+</html>
