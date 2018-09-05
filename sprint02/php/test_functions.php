@@ -23,12 +23,22 @@
     <form method="post">
         <input type="text" name="input">
         <input type="submit" name="reverse" value="reverse">
-        <input type="submit" name="reverse" value="reverse">
+        <input type="submit" name="isUpperCase" value="isUpperCase">
+        <input type="submit" name="isPalindrome" value="isPalindrome">
     </form>
     <?php
     include 'myfunctions.php';
+
     if(isset($_POST['reverse'])){
         reverse();
+    }
+
+    if(isset($_POST['isUpperCase'])){
+        isUpperCase($_POST['input']);
+    }
+
+    if(isset($_POST['isPalindrome'])){
+        isPalindrome($_POST['input']);
     }
     ?>
 
