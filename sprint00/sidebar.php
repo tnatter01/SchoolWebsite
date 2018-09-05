@@ -7,7 +7,7 @@ echo
         <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-        <a href="../HTML/oneven.php">weekdagen.html</a>
+        <a href="../HTML/alert.php">weekdagen.html</a>
         <a href="../HTML/nlvlag.html">nlvlag.html</a>
     </div>
     

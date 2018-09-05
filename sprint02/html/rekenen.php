@@ -1,31 +1,26 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="sprint2.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
-    <title>Rekenen</title>
+    <title id="title">This is replaced by the filename</title>
+    <script type="text/javascript">
+        var url = window.location.pathname; // gets the pathname of the file
+        var str = url.substring(url.lastIndexOf('/')+1); // removes everything before the filename
+        var filename = str.replace(/%20/g, " "); // if the filename has multiple words separated by spaces, browsers do not like that and replace each space with a %20. This replace %20 with a space.
+        document.getElementById("title").innerHTML = filename;
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css"
 </head>
 <body>
-<ul>
-    <li><a class="active" href="index.html">Home</a></li>
 
 
-    <li><a href="inline.html">Inline</a></li>
-    <li><a href="Extern.html">Extern</a></li>
-    <li><a href="voorwaardelijkeOperator.html">Voorwaardelijke Operator</a></li>
-    <li><a href="randomNumber.html">Random Number</a></li>
-    <li><a href="typeof.html">Type of</a></li>
-    <li><a href="rekenenn.html">Rekenen</a></li>
-    <li><a href="Lab02.html">Lab 02</a></li>
+</div>
 
+<div class="main">
 
-
-
-
-
-</ul>
-
-<div class="container">
     <br>
     <center><h1 style="font-family: 'Roboto', sans-serif;">Rekenen</h1>
         <p style="font-family: 'Roboto', sans-serif;">Voer een getal en keuze in <i>( Plus , Min, Maal, Delen )</i></p></center>
@@ -51,6 +46,7 @@
     <br>
     <center><button id="knop" type="submit" class="btn btn-success" onclick="Rekenen()">Bereken</button></center>
     <br>
+    <p id="antwoord"></p>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script>
@@ -66,21 +62,26 @@
             var nummer2 = parseInt(getal2);
 
             uitkomst = nummer1 + nummer2;
-            document.write("<center>" + uitkomst + "</center>");
+            document.getElementById("antwoord").innerHTML =
+                uitkomst;
         }
         else if (string === "min") {
             uitkomst = getal1 - getal2;
-            document.write("<center>" + uitkomst + "</center>");
+            document.getElementById("antwoord").innerHTML =
+                uitkomst;
         }
         else if (string === "maal") {
             uitkomst = getal1 * getal2;
-            document.write("<center>" + uitkomst + "</center>");
+            document.getElementById("antwoord").innerHTML =
+                uitkomst;
         }
         else if (string === "delen") {
             uitkomst = getal1 / getal2;
-            document.write("<center>" + uitkomst + "</center>");
+            document.getElementById("antwoord").innerHTML =
+                uitkomst;
         } else {
-            document.write("<center> U heeft niks of niet de goede string ingevuld! </center>");
+            document.getElementById("antwoord").innerHTML =
+                'U heeft het nog niet goed ingevuld.';
         }
     }
 
@@ -94,5 +95,9 @@
     });
 
 </script>
+
+</div>
+<?php include '../sidebar.php'; ?>
 </body>
+
 </html>

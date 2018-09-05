@@ -8,7 +8,7 @@ echo
         <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-        <a href="../php/oneven.php">oneven.php</a>
+        <a href="../php/alert.php">alert.php</a>
         <a href="../php/grolsch.php">grolsch.php</a>
         <a href="../php/celsius_fahrenheit_kelvin.php">celsius_fahrenheit_kelvin.php</a>
         <a href="../php/yahtzee.php">yahtzee.php</a>
@@ -42,9 +42,9 @@ echo
         <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-        <a href="../html/lab01.php">Lab01 Frontend</a>
-        <a href="../html/lab02.php">Lab02 Frontend</a>
-        <a href="../html/lab02.php">Lab03 Frontend</a>
+        <a href="../frontend/lab01.php">Lab01 Frontend</a>
+        <a href="../frontend/lab02.php">Lab02 Frontend</a>
+        <a href="../frontend/lab02.php">Lab03 Frontend</a>
     
     </div>
     
