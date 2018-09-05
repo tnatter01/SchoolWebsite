@@ -15,32 +15,26 @@
 </head>
 <body>
 
-<?php include '../sidebar.php'; ?>
+
 </div>
 
 <div class="main">
+
+    <form method="post">
+        <input type="text" name="input">
+        <input type="submit" name="reverse" value="reverse">
+        <input type="submit" name="reverse" value="reverse">
+    </form>
     <?php
-
-
-
-    echo '<h1> Ternary operator  </h1>
-
-		<P>Een ternary operator is een operator die bestaat in een aantal programmeertalen, waarvoor drie operanden nodig zijn in plaats van de typische één of twee die de meeste operators gebruiken<br> Het biedt een manier om een ​​eenvoudig if else-blok in te korten. </P>
-
-		<h2> De Dot </h2>
-
-		<p>De . (punt) operator wordt gebruikt om toegang te krijgen tot klasse-, structuur- of vakbondsleden </p>
-
-		<h3> ++ en --  </h3>
-
-		<p> De ++ doet er wat bij -- doet er wat af </p>
-
-		<h4> +=, -=, *=, /= en .=  </h4>
-
-		<p> Het is verkorte manier om die sommen te maken </p>';
-
+    include 'myfunctions.php';
+    if(isset($_POST['reverse'])){
+        reverse();
+    }
     ?>
+
+    <h2></h2>
 </div>
+<?php include '../sidebar.php'; ?>
 </body>
 
 </html>

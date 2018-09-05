@@ -8,7 +8,6 @@ echo
         <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-        <a href="../php/thisisme.php">thisisme.php</a>
         <a href="../php/oneven.php">oneven.php</a>
         <a href="../php/grolsch.php">grolsch.php</a>
         <a href="../php/celsius_fahrenheit_kelvin.php">celsius_fahrenheit_kelvin.php</a>

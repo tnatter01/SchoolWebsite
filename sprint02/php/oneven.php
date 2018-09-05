@@ -15,38 +15,35 @@
 </head>
 <body>
 
-<?php include '../sidebar.php'; ?>
+
 </div>
 
 <div class="main">
     <?php
+    /**
+     * Created by PhpStorm.
+     * User: Twan
+     * Date: 9-3-2018
+     * Time: 10:16
+     */
 
-
-
-    $voornaam = "Twan";
-
-    $achternaam = "Natter";
-
-    $adres = "Pinksterbloem";
-
-    $huisnummer = 9;
-
-    $plaats = "Haaksbergen";
-
-    $leeftijd = 16;
-
-
-
-    echo '<img class="avatar" id="avatarr" src="../IMG/avatar.jpg"/ height="100" width="100" <br>';
-
-    echo "<h1>Naam: $voornaam $achternaam </h1> ";
-
-    echo "<h2>Adres: $adres $huisnummer $plaats </h2>";
-
-    echo "<h3>Leeftijd: $leeftijd</h3>";
-
+    $x=1;
+    while ($x<=100)
+    {
+        if (($x % 2)==0)
+        {
+            $x++;
+            continue;
+        }
+        else
+        {
+            echo $x.'<br />';
+            $x++;
+        }
+    }
     ?>
 </div>
+<?php include '../sidebar.php'; ?>
 </body>
 
 </html>

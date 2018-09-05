@@ -15,24 +15,38 @@
 </head>
 <body>
 
-<?php include '../sidebar.php'; ?>
+
 </div>
 
 <div class="main">
     <?php
+    /**
+     * Created by PhpStorm.
+     * User: Twan
+     * Date: 19-2-2018
+     * Time: 13:42
+     */
+
+    $count = 0 ;
+    $getal1 = 0;
+    $getal2 = 1;
 
 
 
-    echo "The difference between single- and double quotes is that in single quotes, everything is written exactly as it 
+    echo $getal1." ; ";
+    echo $getal2." ; ";
 
-			is between the quotes. Text in double quotes is written as text but variables are shown as the value in the variable, not the 
-
-			variable name.";
-
-
-
+    while ($count < 20 )
+    {
+        $getal3 = $getal2 + $getal1 ;
+        echo $getal3." ; ";
+        $getal1 = $getal2 ;
+        $getal2 = $getal3 ;
+        $count = $count + 1;
+    }
     ?>
 </div>
+<?php include '../sidebar.php'; ?>
 </body>
 
 </html>

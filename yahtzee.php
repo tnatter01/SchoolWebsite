@@ -30,6 +30,10 @@
 
 
 </ul>
+<h43>Yahtzee</h43>
+<form method="post">
+    <input type="submit" name="knop" value="Gooi">
+</form>
 <?php
 /**
  * Created by PhpStorm.
@@ -42,15 +46,12 @@
 session_start();
 
 $_SESSION["worpen"] += 1;
-?>
 
 
-    <h43>Yahtzee</h43>
-    <form method="post">
-        <input type="submit" name="knop" value="Gooi">
-    </form>
 
-    <?php
+
+
+
 
     if (isset($_POST['knop'])) {
 
