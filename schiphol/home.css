@@ -1,0 +1,39 @@
+body {
+   overflow: hidden;
+}
+.footer {
+   position: relative;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #000;
+   color: white;
+   text-align: center;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}  
+.responsive-width {
+    font-size: 1.50rem;
+    vertical-align: middle;
+}
+.responsive-width-small {
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.break-long-words {
+  word-wrap:break-word;
+}
+.bottom-text {
+  color:white;
+}
+.bottom-text:hover
+{
+  color:blue;
+}
+a {
+  color:#212529;
+  border-color:#f8f9fa
+  text-decoration: none;
+}

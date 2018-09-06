@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+        <title>I7AO1 Groep 8</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body id="myPage">
+
+<div class="topnav" id="myTopnav">
+  <a href="#" class="active"><span class="fa fa-home"> Home</span></a>
+  <a href="#team">Groep</a>
+  <a href="#contact">Contact</a>
+  <a href="home.html">Project Schiphol</a>
+  <a href="labradoodle/index.html">Website labradoodle</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div> 
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+    <img src="images/Groep.jpg" alt="groepsfoto" style="display:block; margin-left:auto; margin-right:auto; width:50%;">
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+    <h2>Groep 8</h2>
+    <p>De groepsleden:</p>
+
+    <div class="w3-row"><br>
+        
+        <a href="https://duncandejonge.000webhostapp.com">
+        <div class="w3-quarter">
+            <img src="images/duncan.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+            <h3>Duncan de Jonge</h3>
+            <p>Scrum master</p>
+        </div>
+        </a>
+
+        <a href="https://eekmekci01.000webhostapp.com/">
+        <div class="w3-quarter">
+            <img src="images/emre.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+            <h3>Emre Ekmekci</h3>
+            <p>Support</p>
+        </div>
+        </a>
+        
+        <a href="http://niels.stellarhosting.nl/">
+        <div class="w3-quarter">
+            <img src="images/niels.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+            <h3>Niels Klaassen</h3>
+            <p>Php programmeur</p>
+        </div>
+        </a>
+        
+      
+        <a href="https://twan-natter.000webhostapp.com/twan.html">
+        <div class="w3-quarter">
+            <img src="images/twan.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+            <h3>Twan Natter</h3>
+            <p>Fixer</p>
+        </div>
+        </a>
+
+    </div>
+    
+    <div class="w3-row"><br>
+
+        <a href="http://gataitai.dx.am">
+        <div class="w3-quarter">
+            <img src="images/mathijs.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+            <h3>Mathijs Pattipeilohy</h3>
+            <p>Php programmeur</p>
+        </div>
+        </a>
+        
+        <a href="#">
+        <div class="w3-quarter">
+            <img src="images/lorenzo.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+            <h3>Lorenzo Peperkamp</h3>
+            <p>Support</p>
+        </div>
+        </a>
+
+        <a href="http://tom.ontwikkelomgeving.dx.am/">
+        <div class="w3-quarter">
+            <img src="images/tom.JPG" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+            <h3>Tom Rietkerk</h3>
+            <p>Php programmeur</p>
+        </div>
+        </a>
+        
+    </div>
+    
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+       style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+    <div class="w3-row">
+        <div class="w3-col m5">
+            <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Neem contact op:</span></div>
+            <h3>Adres</h3>
+            <p>Gieterij 200, 7553 VZ Hengelo</p>
+            <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Hengelo, Nederland</p>
+            <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  074 852 5885</p>
+            <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  info@rocvantwente.nl</p>
+        </div>
+        <div class="w3-col m7">
+            <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+                <div class="w3-section">
+                    <label>Naam</label>
+                    <input class="w3-input" type="text" name="Name" required>
+                </div>
+                <div class="w3-section">
+                    <label>Email</label>
+                    <input class="w3-input" type="text" name="Email" required>
+                </div>
+                <div class="w3-section">
+                    <label>Bericht</label>
+                    <input class="w3-input" type="text" name="Message" required>
+                </div>
+                <input class="w3-check" type="checkbox" checked name="Like">
+                <label>Ik vind het leuk!</label>
+                <button type="submit" class="w3-button w3-right w3-theme">Verzenden</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"></div>
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+} 
+
+function myMap()
+{
+    myCenter=new google.maps.LatLng(52.2604595,6.786601,20);
+    var mapOptions= {
+        center:myCenter,
+        zoom:12, scrollwheel: false, draggable: false,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+        marker.setMap(map);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4ByLVkD08Yr24KS8t158Yq7To31SpZ1w&callback=myMap"></script>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Volg ons op:</h4>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+    <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+    <p>Deze website is gemaakt door groep 8</p>
+
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+        <span class="w3-text w3-padding w3-teal w3-hide-small">Ga naar boven</span>
+        <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+</footer>
+
+<script>
+    // Script for side navigation
+    function w3_open() {
+        var x = document.getElementById("mySidebar");
+        x.style.width = "300px";
+        x.style.paddingTop = "10%";
+        x.style.display = "block";
+    }
+
+    // Close side navigation
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+</body>
+</html>

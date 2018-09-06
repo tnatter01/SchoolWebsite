@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>About</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="vliegtuig.jpg">
+		<link rel="stylesheet" href="aboutus.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script>
+			function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {x.className = "topnav";}
+			}
+		</script>
+	</head>
+<body>	
+<header>	
+	<img id="schiphollogo" src="schiphol.png" alt="schiphol logo">
+	<div class="topnav" id="myTopnav">	
+		<a href="home.html">Home</a>
+		<a href="klachten.html">Klachtenformulier</a>
+		<a href="overzicht.php">Klachtenoverzicht</a>
+		<a href="about.html">About us</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+</header>
+	<div id="main" class="row"  style="width: 100%; height: 100%;">
+		<div id="leftaside" class="col-sm-1">
+		</div>
+			<div id="centercontent" class="col-sm-10">
+				<div id="centercontentphotobackground">
+					<img src="klm.jpg" alt="klmfoto">
+				</div>
+					<div id="info">
+						<div id="aboutuspostcode">
+							<h5 class="card-title">Postcodes</h5>
+							<p class="card-text">1098 LV</p>
+							<p class="card-text">1098 XX</p>
+							<p class="card-text">1098 LX</p>
+							<p class="card-text">1099 TT</p>
+							<p class="card-text">1999 BB</p>
+							<p class="card-text">2000 AA</p>
+						</div>
+						
+						<div id="aboutustelefoonnummer">
+							<h5 class="card-title">Telefoon nummers</h5>
+							<p class="card-text">Klantenservice:<br> 0900 0141 EUR(0,40 p.m)</p>
+							<p class="card-text">Schiphol Group:<br> +31 (0) 20 601 9111</p>
+							<p class="card-text">Investor Relations:<br> +31 (0)20 601 2570</p>
+						</div>
+					</div>
+			</div>
+		<div id="rightaside" class="col-sm-1">
+		</div>
+	</div>	
+</body>
+</html>

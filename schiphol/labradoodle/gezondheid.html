@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="dogpaw.png">
+		<link rel="stylesheet" href="buutstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script>
+			function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {x.className = "topnav";}
+			}
+		</script>
+	</head>
+<body style="overflow: hidden;">	
+
+<header>
+	<p>
+	De Labradoodle
+	<p>
+	<div class="topnav" id="myTopnav">	
+		<a href="index.html">De Labradoodle</a>
+		<a href="uiterlijk.html">Uiterlijk</a>
+		<a href="oorsprong.html">Oorsprong</a>
+		<a href="gezondheid.html">Gezondheid</a>
+		<a href="omgang.html">Omgang</a>
+		<a href="controversies.html">controverse</a>
+		<a href="fotogalerie.html">Fotogalerie</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+</header>
+	
+	<div id="main" class="row" style="width: 100%; height: 100%;">
+		<div id="leftaside" class="col-sm-2" style="background-color:#f47442;">
+			
+		</div>
+		
+		<div id="centercontent" class="col-sm-8" style="background-color:#eee;">
+			<h1>3. Gezondheid</h1>
+			<br>
+			<br>
+			<br>
+			<h2>Meest voorkomende<br> 
+			gezondheidsproblemen</h2>
+			<br>
+			<p class="tekst">Aangezien de labradoodle geen echt hondenras is, is het moeilijk te voorspellen welke gezondheidsproblemen er kunnen opduiken bij deze honden. Bij rashonden kan men dit meestal nagaan via de stamboom en de bloedlijnen. 
+			Dit is meestal niet mogelijk bij de labradoodle, daarom wordt er meestal vanuit gegaan dat deze honden dezelfde ziektes en gebreken kunnen hebben van zowel de poedel alsook de labrador retriever. </p>
+			<br>
+			<h2>Levensverwachting</h2>
+			<br>
+			<p class="tekst">Een gezonde labradoodle wordt ongeveer 14 jaar oud.</p>	
+		</div>
+		
+		<div id="rightaside" class="col-sm-2" style="background-color:#f47442;">
+
+		</div>
+	</div>
+</body>
+</html>

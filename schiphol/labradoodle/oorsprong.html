@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="dogpaw.png">
+		<link rel="stylesheet" href="buutstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script>
+			function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {x.className = "topnav";}
+			}
+		</script>
+	</head>
+<body>	
+
+<header>
+	<p>
+	De Labradoodle
+	<p>
+	<div class="topnav" id="myTopnav">	
+		<a href="index.html">De Labradoodle</a>
+		<a href="uiterlijk.html">Uiterlijk</a>
+		<a href="oorsprong.html">Oorsprong</a>
+		<a href="gezondheid.html">Gezondheid</a>
+		<a href="omgang.html">Omgang</a>
+		<a href="controversies.html">controverse</a>
+		<a href="fotogalerie.html">Fotogalerie</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+</header>
+	
+	<div id="main" class="row">
+		<div id="leftaside" class="col-sm-2" style="background-color:#f441f1;">
+			
+		</div>
+		
+		<div id="centercontent" class="col-sm-8" style="background-color:#eee;">
+			<h1>2. Oorsprong</h1>
+			<br>
+			<br>
+			<br>
+			<h2>Gebruiksdoel</h2>
+			<br>
+			<p class="tekst">De labradoodle werd oorspronkelijk gefokt om te dienen als hypoallergene assistentiehond. </p>
+			<br>
+			<h2>Geschiedenis</h2>
+			<br>
+			<p class="tekst">De Australiër Wally Conron is de geestelijke vader van de labradoodle, hoewel hij in recente interviews aangeeft daar niet meer zo trots op te zijn.</p>
+			<br>
+			<p class="tekst">Conron, een fokker van de Royal Victorian Guide Dogs Association, kruiste voor het eerst een poedel met een labrador in 1989. 
+			Zijn doel was om de een hond te creëren die de vachtstructuur heeft van een poedel en de "will to please" van de labrador retriever. 
+			Het was ook Conron die de naam labradoodle bedacht heeft.</p>
+			<br>
+			<p class="tekst">De inspiratie voor deze kruising kwam van een Hawaiäans koppel die Wally Conron eind jaren '80 hebben gevraagd om voor hun een hulphond te fokken die bij hun zouden passen. 
+			De vrouw van het koppel was namelijk slechtziend en had een blindengeleidehond nodig, maar haar echtgenoot was allergisch aan de meeste honden.</p>
+		</div>
+		
+		<div id="rightaside" class="col-sm-2" style="background-color:#f441f1;">
+
+		</div>
+	</div>
+</body>
+</html>

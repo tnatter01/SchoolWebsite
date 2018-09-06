@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Klachten</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="vliegtuig.jpg">
+		<link rel="icon" href="dogpaw.png">
+		<link rel="stylesheet" href="buutstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script>
+			function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {x.className = "topnav";}
+			}
+		</script>
+	</head>
+<body>	
+<header>	
+	<img id="schiphollogo" src="schiphol.png" alt="schiphol logo">
+	<div class="topnav" id="myTopnav">	
+		<a href="home.html">Home</a>
+		<a href="klachten.html">Klachtenformulier</a>
+		<a href="overzicht.php">Klachtenoverzicht</a>
+		<a href="about.html">About us</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+</header>
+	<div id="main" class="row"  style="width: 100%; height: 100%;">
+		<div id="leftaside" class="col-sm-1">
+		</div>
+		<div id="centercontent" class="col-sm-10">
+				<form action="insert.php" method="post">
+				<div id="klachtenformulier">
+                                                <label for="Klacht">Klacht:</label><br>
+						<textarea name="Klacht" id="Klacht" rows="10" cols="40" style="resize: none;" required></textarea>
+				</div>
+						<div id="gegevens">
+								<p>
+									<label for="Naam">Naam:</label><br>
+									<input type="text" name="Naam" id="Naam" required>
+								</p>
+								<p>
+									<label for="Email">Email:</label><br>
+									<input type="text" name="Email" id="Email" required>
+								</p>
+								<p>
+									<label for="Telefoon">Telefoon:</label><br>
+									<input type="text" name="Telefoon" id="Telefoon" required>
+								</p>
+								<p>
+									<label for="Postcode">Postcode:</label><br>
+									<input type="text" name="Postcode" id="Postcode" required>
+								</p>
+								<p>		
+									<label for="Soort">Soort klacht:</label><br>
+									<select name="Soort" id="Soort" required>
+										<option value="geluid">Geluid</option>
+										<option value="milieu">Milieu</option>
+										<option value="veiligheid">Veiligheid</option>
+									</select>
+								</p>
+						</div>
+						<br>
+				<div id="submitbutton">
+					<input type="submit" value="Verzenden">
+				</div>
+				<br>
+				</form>
+			</div>
+		</div>
+		<div id="rightaside" class="col-sm-1">
+		</div>
+</body>
+</html>
