@@ -12,8 +12,7 @@
 $username = array("tnatter01@student.rocvantwente.nl","nklaassen01@student.rocvantwente.nl","eekmekci01@student.rocvantwente.nl","ddejonge05@student.rocvantwente.nl");
 $password = "Welkom12345!";
 
-echo 'tnatter01@student.rocvantwente.nl <Br>';
-echo 'Welkom12345!<br>';
+
     if (isset($_POST['username']) && isset($_POST['password'])) {
 
         if(in_array($_POST['username'], $username)){
