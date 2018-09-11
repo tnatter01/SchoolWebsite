@@ -1,0 +1,334 @@
+# Translation of Plugins - Cookie Notice by dFactory - Stable (latest release) in Dutch
+# This file is distributed under the same license as the Plugins - Cookie Notice by dFactory - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-09-04 08:15:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: nl\n"
+"Project-Id-Version: Plugins - Cookie Notice by dFactory - Stable (latest release)\n"
+
+#: cookie-notice.php:433
+msgid "Enable to reload the page after cookies are accepted."
+msgstr "Schakel het herladen van de pagina in nadat cookies geaccepteerd zijn."
+
+#: cookie-notice.php:339
+msgid "Reloading"
+msgstr "Herladen"
+
+#: cookie-notice.php:424
+msgid "To get the cookie notice status use <code>cn_cookies_accepted()</code> function."
+msgstr "Om de status van de cookiemelding te krijgen gebruik je de functie <code>cn_cookies_accepted()</code>."
+
+#: cookie-notice.php:400
+msgid "The text of the option to refuse the usage of the cookies."
+msgstr "De tekst van de optie om cookies te weigeren."
+
+#: cookie-notice.php:338
+msgid "Script blocking"
+msgstr "Script blokkeren"
+
+#: cookie-notice.php:301
+msgid "Check out our other <a href=\"%s\" target=\"_blank\">WordPress plugins</a>."
+msgstr "Bekijk ook onze andere <a href=\"%s\" target=\"_blank\">WordPress-plugins</a>."
+
+#: cookie-notice.php:300
+msgid "Blog about it & link to the <a href=\"%s\" target=\"_blank\">plugin page</a>."
+msgstr "Blog erover & link naar de <a href=\"%s\" target=\"_blank\">pluginpagina</a>."
+
+#: cookie-notice.php:299
+msgid "<a href=\"%s\" target=\"_blank\">Rate it 5</a> on WordPress.org"
+msgstr "<a href=\"%s\" target=\"_blank\">Waardeer het met 5</a> op WordPress.org"
+
+#: cookie-notice.php:296
+msgid "If you are having problems with this plugin, please browse it's <a href=\"%s\" target=\"_blank\">Documentation</a> or talk about them in the <a href=\"%s\" target=\"_blank\">Support forum</a>"
+msgstr "Als je problemen met deze plugin ondervindt, blader je naar <a href=\"%s\" target=\"_blank\">documentatie</a> of je kunt erover praten in het <a href=\"%s\" target=\"_blank\">Supportforum</a>"
+
+#: cookie-notice.php:456
+msgid "Need a Cookie Policy? Generate one with <a href=\"%s\" target=\"_blank\" title=\"iubenda\">iubenda</a>"
+msgstr "Wil je cookiebeleid formuleren, genereer het dan met <a href=\"%s\" target=\"_blank\" title=\"iubenda\">iubenda</a>"
+
+#. Author URI of the plugin/theme
+msgid "http://www.dfactory.eu/"
+msgstr "http://www.dfactory.eu/"
+
+#. Author of the plugin/theme
+msgid "dFactory"
+msgstr "dFactory"
+
+#. Description of the plugin/theme
+msgid "Cookie Notice allows you to elegantly inform users that your site uses cookies and to comply with the EU cookie law regulations."
+msgstr "Cookie Notice geeft je de mogelijkheid op een elegante manier gebruikers in te lichten over het cookiegebruik op de site, in overeenstemming met de regels van de EU-cookiewet."
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.dfactory.eu/plugins/cookie-notice/"
+msgstr "http://www.dfactory.eu/plugins/cookie-notice/"
+
+#: cookie-notice.php:890
+msgid "Are you sure you want to reset these settings to defaults?"
+msgstr "Weet je zeker dat je de instellingen naar de standaard wilt resetten?"
+
+#: cookie-notice.php:856
+msgid "Settings"
+msgstr "Instellingen"
+
+#: cookie-notice.php:837
+msgid "Support"
+msgstr "Support"
+
+#: cookie-notice.php:736
+msgid "Settings restored to defaults."
+msgstr "Standaardinstellingen teruggezet"
+
+#: cookie-notice.php:619
+msgid "Choose buttons style."
+msgstr "Kies de stijl van de knoppen."
+
+#: cookie-notice.php:599
+msgid "Number of pixels user has to scroll to accept the usage of the cookies and make the notification disappear."
+msgstr "Het aantal pixels dat de gebruiker moet scrollen om het gebruik van cookies te accepteren en de melding te laten verdwijnen."
+
+#: cookie-notice.php:595
+msgid "Enable cookie notice acceptance when users scroll."
+msgstr "Schakel het accepteren van de cookie-melding in als de bezoeker scrolt."
+
+#: cookie-notice.php:585
+msgid "Cookie notice acceptance animation."
+msgstr "Animatie voor het accepteren van de cookie-melding."
+
+#: cookie-notice.php:566
+msgid "Select location for your cookie notice."
+msgstr "Kies een locatie voor je cookie-melding."
+
+#: cookie-notice.php:548
+msgid "Select where all the plugin scripts should be placed."
+msgstr "Selecteer waar alle pluginscripts geplaatst moeten worden."
+
+#: cookie-notice.php:534
+msgid "The ammount of time that cookie should be stored for."
+msgstr "De tijdsduur dat de cookie bewaard moet worden."
+
+#: cookie-notice.php:514
+msgid "Select the link target for more info page."
+msgstr "Selecteer de doel-link voor de pagina 'meer info'."
+
+#: cookie-notice.php:494
+msgid "Enter the full URL starting with http://"
+msgstr "Geef de volledige URL, beginnend met http://"
+
+#: cookie-notice.php:490
+msgid "Select from one of your site's pages"
+msgstr "Kies een van de pagina's van de website"
+
+#: cookie-notice.php:479
+msgid "-- select page --"
+msgstr "-- selecteer pagina --"
+
+#: cookie-notice.php:476
+msgid "Select where to redirect user for more information about cookies."
+msgstr "Selecteer waarheen gebruikers gestuurd worden voor meer informatie over cookies."
+
+#: cookie-notice.php:462
+msgid "The text of the more info button."
+msgstr "De tekst van de knop 'meer info'."
+
+#: cookie-notice.php:455
+msgid "Enable Read more link."
+msgstr "Activeer de link 'Meer lezen'."
+
+#: cookie-notice.php:424
+msgid "Enter non functional cookies Javascript code here (for e.g. Google Analitycs) to be used after cookies are accepted."
+msgstr "Voer de JavaScript-code voor niet-functionele cookies (bijv. Google Analytics) die gebruikt moet worden nadat de cookiemelding is geaccepteerd, hier in."
+
+#: cookie-notice.php:395
+msgid "Give to the user the possibility to refuse third party non functional cookies."
+msgstr "Geef de gebruiker de mogelijkheid om third-party niet-functionele cookies te weigeren."
+
+#: cookie-notice.php:385
+msgid "The text of the option to accept the usage of the cookies and make the notification disappear."
+msgstr "De tekst voor de optie om de cookies te accepteren en de melding te laten verdwijnen."
+
+#: cookie-notice.php:374
+msgid "Enter the cookie notice message."
+msgstr "Voer de cookie-melding in."
+
+#: cookie-notice.php:364
+msgid "Enable if you want all plugin data to be deleted on deactivation."
+msgstr "Schakel dit in als je alle plugin-gegevens wilt verwijderen bij het deactiveren."
+
+#: cookie-notice.php:350
+msgid "Colors"
+msgstr "Kleuren"
+
+#: cookie-notice.php:349
+msgid "Button style"
+msgstr "Stijl knop"
+
+#: cookie-notice.php:348
+msgid "Animation"
+msgstr "Animatie"
+
+#: cookie-notice.php:347
+msgid "Position"
+msgstr "Positie"
+
+#: cookie-notice.php:346
+msgid "Design"
+msgstr "Ontwerp"
+
+#: cookie-notice.php:343
+msgid "Deactivation"
+msgstr "Deactiveren"
+
+#: cookie-notice.php:342
+msgid "Script placement"
+msgstr "Plaatsing script"
+
+#: cookie-notice.php:341
+msgid "Cookie expiry"
+msgstr "Verlopen cookie"
+
+#: cookie-notice.php:340
+msgid "On scroll"
+msgstr "Bij scrollen"
+
+#: cookie-notice.php:337
+msgid "Refuse button"
+msgstr "Weiger-knop"
+
+#: cookie-notice.php:336
+msgid "Link target"
+msgstr "Linkdoel"
+
+#: cookie-notice.php:335
+msgid "More info link"
+msgstr "Link 'Meer info'"
+
+#: cookie-notice.php:334
+msgid "Button text"
+msgstr "Knop-tekst"
+
+#: cookie-notice.php:333
+msgid "Message"
+msgstr "Bericht"
+
+#: cookie-notice.php:332
+msgid "Configuration"
+msgstr "Configuratie"
+
+#: cookie-notice.php:316
+msgid "Reset to defaults"
+msgstr "Resetten naar standaardinstellingen"
+
+#: cookie-notice.php:298
+msgid "Do you like this plugin?"
+msgstr "Vind je deze plugin goed?"
+
+#: cookie-notice.php:295
+msgid "Need support?"
+msgstr "Support nodig?"
+
+#. #-#-#-#-#  cookie-notice-code.pot (Cookie Notice 1.2.42)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: cookie-notice.php:278 cookie-notice.php:290 cookie-notice.php:293
+msgid "Cookie Notice"
+msgstr "Cookie Notice"
+
+#: cookie-notice.php:180
+msgid "Read more"
+msgstr "Meer lezen"
+
+#: cookie-notice.php:179
+msgid "No"
+msgstr "Nee"
+
+#: cookie-notice.php:178
+msgid "Ok"
+msgstr "Ok"
+
+#: cookie-notice.php:177
+msgid "We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it."
+msgstr "We gebruiken cookies om ervoor te zorgen dat onze website zo soepel mogelijk draait. Als je doorgaat met het gebruiken van de website, gaan we er vanuit dat ermee instemt."
+
+#: cookie-notice.php:171
+msgid "Footer"
+msgstr "Voettekst"
+
+#: cookie-notice.php:170
+msgid "Header"
+msgstr "Koptekst"
+
+#: cookie-notice.php:166
+msgid "Slide"
+msgstr "Schuiven"
+
+#: cookie-notice.php:165
+msgid "Fade"
+msgstr "Vervagen"
+
+#: cookie-notice.php:160
+msgid "infinity"
+msgstr "eindeloos"
+
+#: cookie-notice.php:159
+msgid "1 year"
+msgstr "1 jaar"
+
+#: cookie-notice.php:158
+msgid "6 months"
+msgstr "6 maanden"
+
+#: cookie-notice.php:157
+msgid "3 months"
+msgstr "3 maanden"
+
+#: cookie-notice.php:156
+msgid "1 month"
+msgstr "1 maand"
+
+#: cookie-notice.php:155
+msgid "1 week"
+msgstr "1 week"
+
+#: cookie-notice.php:154
+msgid "1 day"
+msgstr "1 dag"
+
+#: cookie-notice.php:150
+msgid "Bar color"
+msgstr "Balkkleur"
+
+#: cookie-notice.php:149
+msgid "Text color"
+msgstr "Tektskleur"
+
+#: cookie-notice.php:140
+msgid "Page link"
+msgstr "Paginalink"
+
+#: cookie-notice.php:139
+msgid "Custom link"
+msgstr "Standaardlink"
+
+#: cookie-notice.php:135
+msgid "Bootstrap"
+msgstr "Bootstrap"
+
+#: cookie-notice.php:134
+msgid "WordPress"
+msgstr "WordPress"
+
+#: cookie-notice.php:133 cookie-notice.php:164
+msgid "None"
+msgstr "Geen"
+
+#: cookie-notice.php:129
+msgid "Bottom"
+msgstr "Onderkant"
+
+#: cookie-notice.php:128
+msgid "Top"
+msgstr "Bovenkant"
