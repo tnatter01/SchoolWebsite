@@ -38,17 +38,26 @@ echo
         <a href="../php/login.php">Login pagina</a>
     </div>
     
+                <button class="dropdown-btn">Algoritme
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="../alg/fiche1.php">Fiche 1</a>
+        <a href="../alg/fiche2.php">Fiche 2</a>
+        <a href="../alg/fiche3.php">Fiche 3</a>
+    </div>
+    
             <button class="dropdown-btn">Frontend
         <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-        <a href="../Backend/lab04.php">Lab 04</a>
-        <a href="../Backend/lab05.php">Lab 05</a>
-        <a href="../Backend/lab06.php">Lab 06</a>
-        <a href="../Backend/lab07.php">Lab 07</a>
-        <a href="../Backend/lab08.php">Lab 08</a>
-        <a href="../Backend/lab09.php">Lab 09</a>
-        <a href="../Backend/lab10.php">Lab 10</a>
+        <a href="../Frontend/lab04.php">Lab 04</a>
+        <a href="../Frontend/lab05.php">Lab 05</a>
+        <a href="../Frontend/lab06.php">Lab 06</a>
+        <a href="../Frontend/lab07.php">Lab 07</a>
+        <a href="../Frontend/lab08.php">Lab 08</a>
+        <a href="../Frontend/lab09.php">Lab 09</a>
+        <a href="../Frontend/lab10.php">Lab 10</a>
     </div>
     
 <script>
