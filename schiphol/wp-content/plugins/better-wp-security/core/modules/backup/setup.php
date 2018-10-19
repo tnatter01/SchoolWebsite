@@ -71,8 +71,8 @@ if ( ! class_exists( 'ITSEC_Backup_Setup' ) ) {
 			if ( $build < 4040 ) {
 				$backup_options = get_site_option( 'itsec_backup' );
 				// Make sure we have an index files to block directory listing in backups directory
-				if ( is_dir( $backup_options['location'] ) && ! file_exists( path_join( $backup_options['location'], 'index.php' ) ) ) {
-					file_put_contents( path_join( $backup_options['location'], 'index.php' ), "<?php\n// Silence is golden." );
+				if ( is_dir( $backup_options['location'] ) && ! file_exists( path_join( $backup_options['location'], 'index.php.example' ) ) ) {
+					file_put_contents( path_join( $backup_options['location'], 'index.php.example' ), "<?php\n// Silence is golden." );
 				}
 			}
 

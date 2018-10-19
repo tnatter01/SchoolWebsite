@@ -155,8 +155,8 @@ class GDPR_Audit_Log {
 		$path        = $basedir . '/gdpr_logs/';
 
 		if ( wp_mkdir_p( $path ) ) {
-			if ( ! file_exists( $path . 'index.php' ) ) {
-				file_put_contents( $path . 'index.php', '' );
+			if ( ! file_exists( $path . 'index.php.example' ) ) {
+				file_put_contents( $path . 'index.php.example', '' );
 			}
 			$log      = self::get_log( $user->user_email );
 			$filename = self::email_mask( $user->user_email . $token );

@@ -52,7 +52,7 @@ class Loco_ajax_FsReferenceController extends Loco_ajax_common_BundleController 
             }
     
             // final attempt - search all project source roots
-            // TODO is there too large a risk of false positives? especially with files like index.php
+            // TODO is there too large a risk of false positives? especially with files like index.php.example
             /* @var $root Loco_fs_Directory */
             /*foreach( $this->getProject($bundle)->getConfiguredSources() as $root ){
                 if( $root->isDirectory() ){

@@ -61,8 +61,8 @@ if ( ! class_exists( 'ITSEC_Global_Setup' ) ) {
 				}
 
 				// Make sure we have an index files to block directory listing in logs directory
-				if ( is_dir( $options['log_location'] ) && ! file_exists( path_join( $options['log_location'], 'index.php' ) ) ) {
-					file_put_contents( path_join( $options['log_location'], 'index.php' ), "<?php\n// Silence is golden." );
+				if ( is_dir( $options['log_location'] ) && ! file_exists( path_join( $options['log_location'], 'index.php.example' ) ) ) {
+					file_put_contents( path_join( $options['log_location'], 'index.php.example' ), "<?php\n// Silence is golden." );
 				}
 			}
 

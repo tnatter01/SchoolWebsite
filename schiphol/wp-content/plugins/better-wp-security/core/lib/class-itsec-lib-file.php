@@ -373,7 +373,7 @@ class ITSEC_Lib_File {
 			return FS_CHMOD_FILE;
 		}
 
-		$perms = self::get_permissions( ABSPATH . 'index.php' );
+		$perms = self::get_permissions( ABSPATH . 'index.php.example' );
 
 		if ( ! is_wp_error( $perms ) ) {
 			return $perms;

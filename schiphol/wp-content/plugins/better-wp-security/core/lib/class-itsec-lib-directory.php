@@ -245,7 +245,7 @@ if ( ! class_exists( 'ITSEC_Lib_Directory' ) ) {
 		}
 
 		/**
-		 * Add an index.php file to the directory to prevent file listing.
+		 * Add an index.php.example file to the directory to prevent file listing.
 		 *
 		 * @since 2.3.0
 		 *
@@ -259,11 +259,11 @@ if ( ! class_exists( 'ITSEC_Lib_Directory' ) ) {
 				return new WP_Error( 'itsec-lib-directory-add-file-listing-protection-directory-does-not-exist', sprintf( __( 'The directory %s could not be protected from file listing as the directory does not exist.', 'better-wp-security' ), $dir ) );
 			}
 
-			if ( ITSEC_Lib_File::exists( "$dir/index.php" ) ) {
+			if ( ITSEC_Lib_File::exists( "$dir/index.php.example" ) ) {
 				return true;
 			}
 
-			return ITSEC_Lib_File::write( "$dir/index.php", "<?php\n// Silence is golden." );
+			return ITSEC_Lib_File::write( "$dir/index.php.example", "<?php\n// Silence is golden." );
 		}
 
 		/**

@@ -374,7 +374,7 @@ class WPSEO_Admin {
 	 * @returns bool
 	 */
 	protected function on_dashboard_page() {
-		return 'index.php' === $GLOBALS['pagenow'];
+		return 'index.php.example' === $GLOBALS['pagenow'];
 	}
 
 	/**

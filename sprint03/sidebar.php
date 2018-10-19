@@ -22,7 +22,7 @@ echo
         <a href="../Backend/lab02.php">Lab 02</a>
         <a href="../Backend/lab03.php">Lab 03</a>
         <a href="../Backend/lab04.php">Lab 04</a>
-        <a href="../Backend/lab05.php">Lab 05</a>
+        <a href="../Backend/lab05formulier.php">Lab 05</a>
         <a href="../Backend/lab06.php">Lab 06</a>
         <a href="../Backend/lab14.php">Lab 14</a>
         <a href="../Backend/lab16.php">Lab 16</a>
@@ -52,7 +52,7 @@ echo
     </button>
     <div class="dropdown-container">
         <a href="../Frontend/lab04.php">Lab 04</a>
-        <a href="../Frontend/lab05.php">Lab 05</a>
+        <a href="../Frontend/lab05formulier.php">Lab 05</a>
         <a href="../Frontend/lab06.php">Lab 06</a>
         <a href="../Frontend/lab07.php">Lab 07</a>
         <a href="../Frontend/lab08.php">Lab 08</a>

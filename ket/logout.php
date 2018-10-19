@@ -4,6 +4,6 @@
 $user->logout(); 
 
 //logged in return to index page
-header('Location: index.php');
+header('Location: index.php.example');
 exit;
 ?>

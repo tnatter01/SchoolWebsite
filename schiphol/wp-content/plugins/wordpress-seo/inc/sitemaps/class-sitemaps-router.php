@@ -31,9 +31,9 @@ class WPSEO_Sitemaps_Router {
 		$wp->add_query_var( 'sitemap_n' );
 		$wp->add_query_var( 'xsl' );
 
-		add_rewrite_rule( 'sitemap_index\.xml$', 'index.php?sitemap=1', 'top' );
-		add_rewrite_rule( '([^/]+?)-sitemap([0-9]+)?\.xml$', 'index.php?sitemap=$matches[1]&sitemap_n=$matches[2]', 'top' );
-		add_rewrite_rule( '([a-z]+)?-?sitemap\.xsl$', 'index.php?xsl=$matches[1]', 'top' );
+		add_rewrite_rule( 'sitemap_index\.xml$', 'index.php.example?sitemap=1', 'top' );
+		add_rewrite_rule( '([^/]+?)-sitemap([0-9]+)?\.xml$', 'index.php.example?sitemap=$matches[1]&sitemap_n=$matches[2]', 'top' );
+		add_rewrite_rule( '([a-z]+)?-?sitemap\.xsl$', 'index.php.example?xsl=$matches[1]', 'top' );
 	}
 
 	/**
@@ -85,7 +85,7 @@ class WPSEO_Sitemaps_Router {
 
 		global $wp_rewrite;
 
-		$base = $wp_rewrite->using_index_permalinks() ? 'index.php/' : '/';
+		$base = $wp_rewrite->using_index_permalinks() ? 'index.php.example/' : '/';
 
 		/**
 		 * Filter the base URL of the sitemaps

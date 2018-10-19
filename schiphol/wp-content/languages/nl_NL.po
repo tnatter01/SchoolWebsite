@@ -4638,7 +4638,7 @@ msgstr "Goedgekeurd"
 msgid "https://codex.wordpress.org/Child_Themes"
 msgstr "https://codex.wordpress.org/Child_Themes"
 
-#. translators: 1: index.php, 2: Codex URL, 3: style.css
+#. translators: 1: index.php.example, 2: Codex URL, 3: style.css
 #: wp-includes/class-wp-theme.php:267
 msgid "Template is missing. Standalone themes need to have a %1$s template file. <a href=\"%2$s\">Child themes</a> need to have a Template header in the %3$s stylesheet."
 msgstr "Template niet aanwezig. Thema's moeten een %1$s templatebestand hebben. <a href=\"%2$s\">subthema's</a> moeten een template header hebben in de %3$s stylesheet."

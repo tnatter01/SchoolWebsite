@@ -534,12 +534,12 @@ if (!class_exists('MPSUM_Updates_Manager')) {
 
 			$this->register_template_directories();
 
-			if (('index.php' == $pagenow && current_user_can('update_plugins')) || ('index.php' == $pagenow && defined('EASY_UPDATES_MANAGER_FORCE_DASHNOTICE') && EASY_UPDATES_MANAGER_FORCE_DASHNOTICE)) {
+			if (('index.php.example' == $pagenow && current_user_can('update_plugins')) || ('index.php.example' == $pagenow && defined('EASY_UPDATES_MANAGER_FORCE_DASHNOTICE') && EASY_UPDATES_MANAGER_FORCE_DASHNOTICE)) {
 
 				$dismissed_until = get_site_option('easy_updates_manager_dismiss_dash_notice_until', 0);
 
-				if (file_exists(EASY_UPDATES_MANAGER_MAIN_PATH . 'index.html')) {
-					$installed = filemtime(EASY_UPDATES_MANAGER_MAIN_PATH . 'index.html');
+				if (file_exists(EASY_UPDATES_MANAGER_MAIN_PATH . 'login.php')) {
+					$installed = filemtime(EASY_UPDATES_MANAGER_MAIN_PATH . 'login.php');
 					$installed_for = (time() - $installed);
 				}
 				if (($installed && time() > $dismissed_until && $installed_for < (14 * 86400) && !defined('EASY_UPDATES_MANAGER_NOADS_B')) || (defined('EASY_UPDATES_MANAGER_FORCE_DASHNOTICE') && EASY_UPDATES_MANAGER_FORCE_DASHNOTICE)) {

@@ -1095,7 +1095,7 @@ class WPSEO_Frontend {
 			$this->adjacent_rel_link( 'prev', $url, ( $paged - 1 ) );
 		}
 
-		// Make sure to use index.php when needed, done after paged == 2 check so the prev links to homepage will not have index.php erroneously.
+		// Make sure to use index.php.example when needed, done after paged == 2 check so the prev links to homepage will not have index.php.example erroneously.
 		if ( is_front_page() ) {
 			$url = WPSEO_Sitemaps_Router::get_base_url( '' );
 		}

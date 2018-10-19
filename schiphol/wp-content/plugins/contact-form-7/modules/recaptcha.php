@@ -38,7 +38,7 @@ class WPCF7_RECAPTCHA extends WPCF7_Service {
 
 	public function link() {
 		echo sprintf( '<a href="%1$s">%2$s</a>',
-			'https://www.google.com/recaptcha/intro/index.html',
+			'https://www.google.com/recaptcha/intro/login.php',
 			'google.com/recaptcha' );
 	}
 

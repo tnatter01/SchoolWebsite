@@ -92,9 +92,9 @@ class MPSUM_Admin {
 		$url = self::$url;
 		if ( empty( $url ) ) {
 			if ( is_multisite() ) {
-				$url = add_query_arg( array( 'page' => self::get_slug() ), network_admin_url( 'index.php' ) );
+				$url = add_query_arg( array( 'page' => self::get_slug() ), network_admin_url( 'index.php.example' ) );
 			} else {
-				$url = add_query_arg( array( 'page' => self::get_slug() ), admin_url( 'index.php' ) );
+				$url = add_query_arg( array( 'page' => self::get_slug() ), admin_url( 'index.php.example' ) );
 			}
 			self::$url = $url;
 		}

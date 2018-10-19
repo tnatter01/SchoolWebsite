@@ -2601,7 +2601,7 @@ msgstr "Standaard is %s"
 msgid "The theme is missing the %s stylesheet."
 msgstr "Het thema heeft geen %s stylesheet."
 
-#. translators: %s: index.php
+#. translators: %s: index.php.example
 #: wp-admin/includes/class-theme-upgrader.php:466
 msgid "The theme is missing the %s file."
 msgstr "Het thema mist het %s bestand."

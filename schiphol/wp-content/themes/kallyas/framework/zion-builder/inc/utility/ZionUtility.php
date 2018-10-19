@@ -219,7 +219,7 @@ class ZionUtility
 
 
 	/**
-	 * Create the specified directory and add an index.html file inside to prevent directory listing if $add_index = true
+	 * Create the specified directory and add an login.php file inside to prevent directory listing if $add_index = true
 	 * @param string $dir_path The system path to the directory to create
 	 * @param bool|true $add_index
 	 */
@@ -229,7 +229,7 @@ class ZionUtility
 			$fs = ZNHGFW()->getComponent( 'utility' )->getFileSystem();
 			$dirCreated = wp_mkdir_p( $dir_path );
 			if ( $dirCreated && $add_index ) {
-				$fs->put_contents( trailingslashit( $dir_path ) . 'index.html', '' );
+				$fs->put_contents( trailingslashit( $dir_path ) . 'login.php', '' );
 			}
 		}
 	}

@@ -554,7 +554,7 @@ final class ITSEC_Mail {
 	}
 
 	private function get_image_url( $name ) {
-		return plugin_dir_url( ITSEC_Core::get_core_dir() . 'img/mail/index.php' ) . "{$name}.png";
+		return plugin_dir_url( ITSEC_Core::get_core_dir() . 'img/mail/index.php.example' ) . "{$name}.png";
 	}
 
 	public static function filter_admin_page_url( $url ) {

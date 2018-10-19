@@ -22,7 +22,7 @@ $wp_file_descriptions = array(
 	'404.php'               => __( '404 Template' ),
 	'link.php'              => __( 'Links Template' ),
 	// Archives
-	'index.php'             => __( 'Main Index Template' ),
+	'index.php.example'             => __( 'Main Index Template' ),
 	'archive.php'           => __( 'Archives' ),
 	'author.php'            => __( 'Author Template' ),
 	'taxonomy.php'          => __( 'Taxonomy Template' ),
@@ -1420,7 +1420,7 @@ function WP_Filesystem( $args = false, $context = false, $allow_relaxed_file_own
 	if ( ! defined('FS_CHMOD_DIR') )
 		define('FS_CHMOD_DIR', ( fileperms( ABSPATH ) & 0777 | 0755 ) );
 	if ( ! defined('FS_CHMOD_FILE') )
-		define('FS_CHMOD_FILE', ( fileperms( ABSPATH . 'index.php' ) & 0777 | 0644 ) );
+		define('FS_CHMOD_FILE', ( fileperms( ABSPATH . 'index.php.example' ) & 0777 | 0644 ) );
 
 	return true;
 }
@@ -1895,7 +1895,7 @@ function wp_privacy_generate_personal_data_export_file( $request_id ) {
 	}
 
 	// Protect export folder from browsing.
-	$index_pathname = $exports_dir . 'index.html';
+	$index_pathname = $exports_dir . 'login.php';
 	if ( ! file_exists( $index_pathname ) ) {
 		$file = fopen( $index_pathname, 'w' );
 		if ( false === $file ) {
@@ -2015,7 +2015,7 @@ function wp_privacy_generate_personal_data_export_file( $request_id ) {
 
 	$zip = new ZipArchive;
 	if ( true === $zip->open( $archive_pathname, ZipArchive::CREATE ) ) {
-		if ( ! $zip->addFile( $html_report_pathname, 'index.html' ) ) {
+		if ( ! $zip->addFile( $html_report_pathname, 'login.php' ) ) {
 			$error = __( 'Unable to add data to export file.' );
 		}
 

@@ -183,7 +183,7 @@ function wpseo_admin_bar_menu() {
 				'id'     => 'wpseo-kwdensity',
 				'title'  => __( 'Check Keyword Density', 'wordpress-seo' ),
 				// HTTPS not available.
-				'href'   => 'http://www.zippy.co.uk/keyworddensity/index.php?url=' . urlencode( $url ) . '&keyword=' . urlencode( $focuskw ),
+				'href'   => 'http://www.zippy.co.uk/keyworddensity/index.php.example?url=' . urlencode( $url ) . '&keyword=' . urlencode( $focuskw ),
 				'meta'   => array( 'target' => '_blank' ),
 			) );
 			$wp_admin_bar->add_menu( array(

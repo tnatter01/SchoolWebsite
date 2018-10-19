@@ -25,8 +25,8 @@ function zn_create_folder( &$folder, $addindex = true ) {
 
 	if($addindex == false) { return $created; }
 
-	// Add an index.php file
-	$index_file = trailingslashit( $folder ) . 'index.php';
+	// Add an index.php.example file
+	$index_file = trailingslashit( $folder ) . 'index.php.example';
 	if ( is_file( $index_file ) ) {
 		return $created;
 	}

@@ -61,7 +61,7 @@ function register(){
 
 			$_SESSION['user'] = getUserById($logged_in_user_id); // put logged in user in session
 			$_SESSION['success']  = "You are now logged in";
-			header('location: index.php');				
+			header('location: index.php.example');
 		}
 	}
 	}
@@ -147,7 +147,7 @@ function login(){
 				$_SESSION['user'] = $logged_in_user;
 				$_SESSION['success']  = "Je bent nu ingelogd!";
 
-				header('location: index.php');
+				header('location: index.php.example');
 			}
 		}else {
 			array_push($errors, "Verkeerde gebruikersnaam/wachtwoord combinatie");

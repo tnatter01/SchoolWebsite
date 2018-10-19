@@ -26,7 +26,7 @@ echo
     </button>
     <div class="dropdown-container">
         <a href="../Backend/lab04.php">Lab 04</a>
-        <a href="../Backend/lab05.php">Lab 05</a>
+        <a href="../Backend/lab05formulier.php">Lab 05</a>
         <a href="../Backend/lab06.php">Lab 06</a>
         <a href="../Backend/lab07.php">Lab 07</a>
         <a href="../Backend/lab08.php">Lab 08</a>

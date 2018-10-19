@@ -287,7 +287,7 @@ class ITSEC_Lib_Login_Interstitial {
 		}
 
 		if ( empty( $_REQUEST['redirect_to'] ) ) {
-			$redirect_to = admin_url( 'index.php' );
+			$redirect_to = admin_url( 'index.php.example' );
 			$requested   = '';
 		} else {
 			$redirect_to = $requested = $_REQUEST['redirect_to'];
