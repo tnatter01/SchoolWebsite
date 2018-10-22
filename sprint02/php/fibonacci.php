@@ -16,18 +16,10 @@
 <body>
 
 
-</div>
-
 <div class="main">
     <?php
-    /**
-     * Created by PhpStorm.
-     * User: Twan
-     * Date: 19-2-2018
-     * Time: 13:42
-     */
 
-    $count = 0 ;
+    $count = 0;
     $getal1 = 0;
     $getal2 = 1;
 

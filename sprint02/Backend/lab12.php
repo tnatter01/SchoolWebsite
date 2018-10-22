@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -18,32 +21,33 @@
 
 
 <div class="main">
-    <?php
-    $boeken = array (
-        array("titel"=> "Stoner",
-            "auteur"=> "John WIlliams",
-            "genre"=> "fictie",
-            "prijs"=> 19.99),
-        array("titel"=> "De cirkel",
-            "auteur"=> "Dave Eggers",
-            "genre"=> "fictie",
-            "prijs"=> 22.50),
-        array("titel"=> "Rayuela",
-            "auteur"=> "Julio Cortazar",
-            "genre"=> "fictie",
-            "prijs"=> 25.50),
-    );
-
-    function prijsLijst($boeken){
-
-        echo "prijs: <i>" .$boeken[0]["prijs"]."</i><br>";
-        echo "prijs: <i>" .$boeken[1]["prijs"]."</i><br>";
-        echo "prijs: <i>" .$boeken[2]["prijs"]."</i><br>";
-
+<?php
+echo "<br>Reken het saldo uit zolang saldo lager dan 2000 is";
+$saldo = 100;
+$rente = 0.1;
+$maand = 1;
+echo "<br>Beginsaldo is: $saldo";
+echo "<br>START...";
+do{
+    if($maand == 2){
+        echo "<br>Februari telt niet mee";
+        continue;
     }
+    if($maand = 6){
+        if($saldo <= 1000){
+            echo "Je saldo is te laag.";
+            break;
+        }
+    }
+    $saldo = $saldo + ($saldo * $rente);
+    $saldo = sprintf("%0.2f", $saldo);
+    echo "Maand: $maand je saldo is $saldo";
+    $maand++;
 
-    prijsLijst($boeken);
-    ?>
+} while($saldo < 2000);
+    echo "<br>FINISH!";
+
+?>
 </div>
 
 
@@ -52,3 +56,4 @@
 </body>
 
 </html>
+

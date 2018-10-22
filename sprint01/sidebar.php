@@ -26,9 +26,6 @@ echo
         <a href="../Backend/lab01.php">Lab 01</a>
         <a href="../Backend/lab02.php">Lab 02</a>
         <a href="../Backend/lab03.php">Lab 03</a>
-        <a href="../Backend/lab04.php">Lab 04</a>
-        <a href="../Backend/lab05formulier.php">Lab 05</a>
-        <a href="../Backend/lab06.php">Lab 06</a>
     </div>
 <script>
     /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */

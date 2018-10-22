@@ -1,6 +1,4 @@
-<?php
-echo
-'<div class="sidenav">
+<div class="sidenav">
 
     <a href="../rekenen/rekenen.php">Rekenen</a>
 
@@ -88,5 +86,4 @@ echo
             }
             });
             }
-            </script>';
-?>
+            </script>

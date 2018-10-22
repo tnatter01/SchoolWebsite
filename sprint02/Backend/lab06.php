@@ -19,30 +19,21 @@
 
 <div class="main">
     <?php
-    $boeken = array (
-        array("titel"=> "Stoner",
-            "auteur"=> "John WIlliams",
-            "genre"=> "fictie",
-            "prijs"=> 19.99),
-        array("titel"=> "De cirkel",
-            "auteur"=> "Dave Eggers",
-            "genre"=> "fictie",
-            "prijs"=> 22.50),
-        array("titel"=> "Rayuela",
-            "auteur"=> "Julio Cortazar",
-            "genre"=> "fictie",
-            "prijs"=> 25.50),
-    );
+        $brief="
+            Beste <b><<abonnee>></b><br>
+            U heeft het laatste nummer van ons magazine ontvangen.<br>
+            Omdat we u heel graag als abonnee willen behouden, bieden we u een aantrekkelijke en exclusieve korting: <br>
+            U betaalt <b><<korting>></b> in plaats van 65 euro. <br><br>
+            <i>Profiteer nu van deze aanbieding!</i><br><br>
+            Met vriendelijke groet,
+            <br>Sam Simons
+            <br>Hoofdredacteur
+        ";
 
-    function prijsLijst($boeken){
+    $brief = str_replace("<<abonnee>>", "Jan Davids", $brief);
+    $brief = str_replace("<<korting>>", "50", $brief);
+    echo $brief;
 
-        echo "prijs: <i>" .$boeken[0]["prijs"]."</i><br>";
-        echo "prijs: <i>" .$boeken[1]["prijs"]."</i><br>";
-        echo "prijs: <i>" .$boeken[2]["prijs"]."</i><br>";
-
-    }
-
-    prijsLijst($boeken);
     ?>
 </div>
 
