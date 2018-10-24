@@ -28,7 +28,6 @@ echo
         <a href="../Backend/lab16.php">Lab 16</a>
         <a href="../Backend/lab17.php">Lab 17</a>
     </div>
-    
             <button class="dropdown-btn">PHP
         <i class="fa fa-caret-down"></i>
     </button>
